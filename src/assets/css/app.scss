@@ -1,9 +1,19 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: orange;
+	background-color: white;
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	-webkit-animation: colorchange 30s;
 }
+
+@-webkit-keyframes colorchange
+    {
+      0%   {background: white;}
+      25%  {background: black;}
+      50%  {background: white;}
+      75%  {background: black;}
+      100% {background: white;}
+    }
 
 .nav {
 	width: 100%;
@@ -33,7 +43,18 @@ body {
 	line-height: 70px;
 	font-weight: 900;
 	text-align: center;
+	color: black;
+	-webkit-animation: headlinechange 30s;
 }
+
+@-webkit-keyframes headlinechange
+    {
+      0%   {color: black;}
+      25%  {color: yellow;}
+      50%  {color: black;}
+      75%  {color: yellow;}
+      100% {color: black;}
+    }
 
 .image {
 	padding: 30px 0;
@@ -45,4 +66,8 @@ body {
 	font-family: Georgia, serif;
 	font-size: 20px;
 	line-height: 28px;
+	color: black;
+	background-color: white
 }
+
+
